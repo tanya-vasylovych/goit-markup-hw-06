@@ -24,8 +24,8 @@
             <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
             <ul class="menu">
             <li><a href="./index.html" class="page-nav studio">Studio</a></li>
-            <li><a href="" class="page-nav">Portfolio</a></li>
-            <li><a href="" class="page-nav">Contacts</a></li>
+            <li><a href="#portfolio" class="page-nav">Portfolio</a></li>
+            <li><a href="#contacts" class="page-nav">Contacts</a></li>
             </ul>
         </nav>
         <button class="menu-btn" type="button"><svg class="menu-btn-icon" width="24" height="24">
@@ -85,18 +85,17 @@
             </ul>
         </div>
         </section>
+
         <section class="team">
             <div class="container">
             <h2 id="#contacts" class="team-title">Our Team</h2>
     <ul class="team-card">
-      <li class="team-card-item"><picture>
-            <source media="(min-width: 1158px)" type="image/webp" srcset="2x" />
-            <source media="(min-width: 768px)" type="image/webp" srcset="2x" />
-        
-            <img class="" src="" srcset=" 2x" />
-            <img class="" src="" srcset=" 2x" width="" height="" alt=""  />
+      <li class="team-card-item">
+        <picture>
+            <img
+             srcset="./images/mark-2x-min.jpg 2x" 
+             src="./images/mark-1x.jpg" alt="Mark Guerrero" width="264" height="260" />
         </picture> 
-        <img src="./images/mark-1x.jpg" alt="Mark Guerrero" width="264" height="260"/>
        <div class="card-name"><h3 class="card-title-name">Mark Guerrero</h3>
         <p class="descr-name">Product Designer</p>
             <ul class="scl-nt">
@@ -117,14 +116,13 @@
             </ul>
     </div>
       </li>
-      <li class="team-card-item"><picture>
-            <source media="(min-width: 1158px)" type="image/webp" srcset="2x" />
-            <source media="(min-width: 768px)" type="image/webp" srcset="2x" />
-        
-            <img class="" src="" srcset=" 2x" />
-            <img class="" src="" srcset=" 2x" width="" height="" alt=""  />
-        </picture> 
-        <img src="./images/tom-1x.jpg" alt="Tom Ford" width="264" height="260"/> 
+      <li class="team-card-item">
+        <picture>
+            <img
+             srcset="./images/tom-2x-min.jpg 2x"
+              src="./images/tom-1x.jpg" 
+              alt="Tom Ford" width="264" height="260" />
+        </picture>
         <div class="card-name"><h3 class="card-title-name">Tom Ford</h3>
         <p class="descr-name">Frontend Developer</p>
         <ul class="scl-nt">
@@ -145,14 +143,13 @@
             </ul>
     </div>
       </li>
-      <li class="team-card-item"><picture>
-            <source media="(min-width: 1158px)" type="image/webp" srcset="2x" />
-            <source media="(min-width: 768px)" type="image/webp" srcset="2x" />
-        
-            <img class="" src="" srcset=" 2x" />
-            <img class="" src="" srcset=" 2x" width="" height="" alt=""  />
-        </picture> 
-       <img src="./images/camila-1x.jpg" alt="Camila Garcia" width="264" height="260"/> 
+      <li class="team-card-item">
+        <picture>
+            <img 
+            srcset="./images/camila-2x-min.jpg 2x" 
+            src="./images/camila-1x.jpg" 
+            alt="Camila Garcia" width="264" height="260" />
+        </picture>
     <div class="card-name"><h3 class="card-title-name">Camila Garcia</h3>
        <p class="descr-name">Marketing</p>
        <ul class="scl-nt">
@@ -173,14 +170,13 @@
         </ul>
     </div>
       </li>
-      <li class="team-card-item"><picture>
-            <source media="(min-width: 1158px)" type="image/webp" srcset="2x" />
-            <source media="(min-width: 768px)" type="image/webp" srcset="2x" />
-        
-            <img class="" src="" srcset=" 2x" />
-            <img class="" src="" srcset=" 2x" width="" height="" alt=""  />
-        </picture> 
-        <img src="./images/daniel-1x.jpg" alt="Daniel Wilson" width="264" height="260"/> 
+      <li class="team-card-item">
+        <picture>
+            <img 
+            srcset="./images/daniel-2x-min.jpg 2x" 
+            src="./images/daniel-1x.jpg" 
+            alt="Daniel Wilson" width="264" height="260" />
+        </picture>
         <div class="card-name"><h3 class="card-title-name">Daniel Wilson</h3>
         <p class="descr-name">UI Designer</p>
         <ul class="scl-nt">
@@ -204,12 +200,25 @@
     </ul>
         </div>
         </section>
+
         <section class="vision">
             <div class="container">
             <h2 class="team-title">Our Portfolio</h2>
             <ul class="prtfl-card">
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-4.jpg" alt="BankApp" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/bank-1x.jpg, ./images/bank-2x.jpg 2x" 
+                             alt="BankApp" width="360" height="300"/>
+
+                            <source media="(min-width: 768px)" 
+                             srcset="./images/bank-tablet-1x.jpg 1x, ./images/bank-tablet-2x.jpg 2x"
+                             alt="BankApp" width="356" height="300" />
+
+                            <img srcset="./images/bank-mobile-2x.jpg 2x" 
+                             src="./images/bank-mobile-1x.jpg" alt="BankApp" width="288" height="280" /> 
+                         </picture>
                     <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                         Exotic
                         Fruit Ecommerce App ·
@@ -219,7 +228,20 @@
                     
                 </li>
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-5.jpg" alt="Phone" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/cash-1x.jpg, ./images/cash-2x 2x" 
+                            alt="Phone" width="360" height="300" />
+                        
+                            <source media="(min-width: 768px)"
+                             srcset="./images/cash-tablet-2x.jpg 1x, ./images/cash-tablet-2x.jpg 2x"
+                                alt="Phone" width="356" height="300" />
+                        
+                            <img srcset="./images/cash-mobile-2x.jpg 2x"
+                             src="./images/cash-mobile-1x.jpg" 
+                            alt="Phone" width="288" height="280" />
+                        </picture>
                         <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App ·
                         Cloud Storage App</p></div>
@@ -228,7 +250,20 @@
                     
                 </li>
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-6.jpg" alt="Laptop" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/meditation-1x.jpg, ./images/meditation-2x 2x" 
+                            alt="Laptop" width="360" height="300" />
+                        
+                            <source media="(min-width: 768px)"
+                             srcset="./images/meditation-tablet-2x.jpg 1x, ./images/meditation-tablet-2x.jpg 2x"
+                                alt="Laptop" width="356" height="300" />
+                        
+                            <img srcset="./images/meditation-mobile-2x.jpg 2x"
+                             src="./images/meditation-mobile-1x.jpg"
+                             alt="Laptop" width="288" height="280" />
+                        </picture>
                         <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                             Exotic
                             Fruit Ecommerce App ·
@@ -238,7 +273,20 @@
                     
                 </li>
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-7.jpg" alt="Car" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/taxi-1x.jpg, ./images/taxi-2x 2x"
+                             alt="Car"  width="360" height="300" />
+                        
+                            <source media="(min-width: 768px)"
+                                srcset="./images/taxi-tablet-2x.jpg 1x, ./images/taxi-tablet-2x.jpg 2x"
+                                 alt="Car" width="356" height="300" />
+                        
+                            <img srcset="./images/taxi-mobile-2x.jpg 2x"
+                             src="./images/taxi-mobile-1x.jpg"
+                             alt="Car" width="288" height="280" />
+                        </picture>
                     <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                         Exotic
                         Fruit Ecommerce App ·
@@ -248,7 +296,20 @@
                     
                 </li>
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-8.jpg" alt="Screen" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/screen-1x.jpg, ./images/screen-2x 2x"
+                             alt="Screen" width="360" height="300" />
+                        
+                            <source media="(min-width: 768px)"
+                             srcset="./images/screen-tablet-2x.jpg 1x, ./images/screen-tablet-2x.jpg 2x"
+                             alt="Screen" width="356" height="300" />
+                        
+                            <img srcset="./images/screen-mobile-2x.jpg 2x"
+                             src="./images/screen-mobile-1x.jpg"
+                             alt="Screen" width="288" height="280" />
+                        </picture>
                     <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                         Exotic
                         Fruit Ecommerce App ·
@@ -258,7 +319,20 @@
                     
                 </li>
                 <li class="prtfl-card-item">
-                    <div class="vrl"><img src="./images/img-9.jpg" alt="Girl" width="360" height="300" />
+                    <div class="vrl">
+                        <picture>
+                            <source media="(min-width: 1158px)"
+                             srcset="./images/online-1x.jpg, ./images/online-2x 2x"
+                             alt="Girl" width="360" height="300" />
+                        
+                            <source media="(min-width: 768px)"
+                             srcset="./images/online-tablet-2x.jpg 1x, ./images/online-tablet-2x.jpg 2x"
+                             alt="Girl" width="356" height="300" />
+                        
+                            <img srcset="./images/online-mobile-2x.jpg 2x"
+                             src="./images/online-mobile-1x.jpg"
+                             alt="Girl" width="288" height="280" />
+                        </picture> 
                         <p class="text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                             Exotic
                             Fruit Ecommerce App ·
@@ -376,59 +450,49 @@
         </div>
 
 <!-- Modal Menu -->
+
   <div class="mobile-menu">
     <div class="container mobile-menu-container">
-        <button class="mobile-close-btn">
-            <svg class="mobile-menu-close-icon">
-                <use></use>
-            </svg>
+        <button class="mobile-close-btn"><svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        
         </button>
         <nav class="mobile-menu-nav">
             <ul class="mobile-menu-nav-list">
                 <li class="mobile-menu-nav-list-item">
-                    <a href="" class="mobile-menu-nav-link">Studio</a></li>
+                    <a href="/index.html" class="mobile-menu-nav-link">Studio</a></li>
                 <li class="mobile-menu-nav-list-item">
-                    <a href="" class="mobile-menu-nav-link">Portfolio</a></li>
+                    <a href="#portfolio" class="mobile-menu-nav-link">Portfolio</a></li>
                 <li class="mobile-menu-nav-list-item">
-                    <a href="" class="mobile-menu-nav-link">Contacts</a></li>
+                    <a href="#contacts" class="mobile-menu-nav-link">Contacts</a></li>
             </ul>
         </nav>
-        <address class="address-lin">
-            <ul class="list">
-                <li><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="address">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+           <address class="address-link"><ul class="list">
+                <li><a href="tel:+110001111111" class="address-link-item">+11 (000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="address-link-item">info@devstudio.com</a></li>
+                
+            </ul></address>
         <ul class="scl-nt">
             <li class="networks"><a href="" class="net-link">
-                <svg width="16" height="16" class="net-svg">
+                <svg width="24" height="24" class="net-svg">
                         <use href="./images/icons.svg#icon-instagram-2-1"></use>
                     </svg></a></li>
             <li class="networks"><a href="" class="net-link">
-                <svg width="16" height="16" class="net-svg">
+                <svg width="24" height="24" class="net-svg">
                         <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg></a></li>
             <li class="networks"><a href="" class="net-link">
-                <svg width="16" height="16" class="net-svg">
+                <svg width="24" height="24" class="net-svg">
                         <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg></a></li>
             <li class="networks"><a href="" class="net-link">
-                <svg width="16" height="16" class="net-svg">
+                <svg width="24" height="24" class="net-svg">
                         <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                     </svg></a></li>
         </ul>
     </div>
   </div>
-        
-        <!-- <picture>
-            <source media="(min-width: 1158px)" type="image/webp" srcset="2x" />
-            <source media="(min-width: 768px)" type="image/webp" srcset="2x" />
-        
-            <img class="" src="" srcset=" 2x" />
-            <img class="" src="" srcset=" 2x" width="" height="" alt=""  />
-        </picture> 
-     -->
-
 
 </body>
 </html>
