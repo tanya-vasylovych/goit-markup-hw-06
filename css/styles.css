@@ -1215,7 +1215,6 @@ privacy-policy-span:checked {
 .mobile-menu-nav-link-studio{
    color: #404bbf;
 }
-.mobile-menu-close-icon {}
    
 .mobile-menu-nav {
          display: flex;
@@ -1254,7 +1253,9 @@ privacy-policy-span:checked {
 .address-link {
 display: block;
 }
-
+.address-link-item{
+   margin-bottom: 24px;
+}
 .address-link-item-tel {
       font-weight: 500;
       font-size: 20px;
@@ -1274,7 +1275,6 @@ display: block;
       font-style: normal;
 }
 
-
 .scl-nt-mob {
    display: flex;
       align-items: flex-start;
@@ -1285,6 +1285,7 @@ display: block;
       height: 40px; 
 }
 }
+
 @media screen and (min-width: 768px){
    .mobile-menu {
       display: none;
