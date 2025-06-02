@@ -822,7 +822,6 @@ img {
     background-color: #2e2f42;
     padding: 100px 0;
   }
-
   .footer-net {
     display: flex;
     align-items: baseline;
@@ -831,22 +830,18 @@ img {
     gap: 0;
     margin: 0 auto;
   }
-
   .foot-logo-block {
     margin-right: 120px;
   }
-
   .logo-ftr {
     display: inline-block;
     margin-bottom: 16px;
   }
-
   .logo-footer {
     color: #f4f4fd;
     margin-bottom: 16px;
     display: inline-block;
   }
-
   .p-footer {
     color: #f4f4fd;
     font-weight: 400;
@@ -855,13 +850,11 @@ img {
     line-height: 1.5;
     max-width: 265px;
   }
-
   .media {
     width: 208px;
     height: 80px;
     margin-right: 80px;
   }
-
   .p-media {
     margin-bottom: 16px;
     font-weight: 500;
@@ -870,11 +863,9 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff;
   }
-
   .sub-section {
     max-width: 453px;
   }
-
 .subscribe {
   display: flex;
   flex-direction: row;
