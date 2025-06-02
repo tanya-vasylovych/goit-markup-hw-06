@@ -13,13 +13,14 @@ h1, h2, h3, p {
    margin-bottom: 0;}
 img {display: block;}
 
-
-.container {
-   max-width: 320%;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
+@media screen {
+   .container {
+         max-width: 320px;
+         padding-left: 16px;
+         padding-right: 16px;
+         margin-left: auto;
+         margin-right: auto;
+      }
 }
 
 
@@ -31,7 +32,8 @@ img {display: block;}
 
 /* Desktop */
 @media screen and (min-width: 1158px){.container {
-      max-width: 1440px;
+      max-width: 1158px;
+      padding: 0px 15px;
    }
 }
 
@@ -39,10 +41,18 @@ img {display: block;}
    /*-----HEADER------*/
 
 @media screen { 
+   .hdr {
+         border-bottom: 1px solid #e7e9fc;
+         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
+         background: #FFFFFF;
+      }
  .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+ 
             }         
    .nav-flex {
         padding: 24px 0;
@@ -150,12 +160,7 @@ img {display: block;}
 
 /* Desktop */
 @media (min-width: 1158px){
-  .hdr {
-       border-bottom: 1px solid #e7e9fc;
-       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 1px 6px rgba(46, 47, 66, 0.08);
-      }
+
    .address-lin {
       display: flex;
       flex-direction: row;
@@ -279,7 +284,6 @@ img {display: block;}
 /*-----------VISION------------*/
 @media screen {
 .vision {
-      width: 100%;
       padding: 96px 16px;
       }
 
@@ -393,8 +397,7 @@ img {display: block;}
 @media screen {
    .team {
       background-color: #F4F4FD;
-      padding: 120px 0;
-      width: 320px;   
+      padding: 120px 0; 
       }
    
    .team-title {
@@ -463,7 +466,6 @@ img {display: block;}
 @media (min-width: 768px){
    .team {
          padding: 120px 0;
-         width: 100%;
       }
  .team-card {
         display: flex;
@@ -490,7 +492,6 @@ img {display: block;}
    .team {
          background-color: #F4F4FD;
          padding: 120px 0;
-         width: 100%;
       }
    
    .team-title {
@@ -540,9 +541,7 @@ img {display: block;}
 
 /*---------PORTFOLIO---------*/
 @media screen {
-   .prtfl-card {
-         width: 100%;
-      }  
+
    .text-overlay {
          display: none;  }
    .prtfl-card-item {
@@ -1181,9 +1180,8 @@ privacy-policy-span:checked {
          left: 0;
          z-index: 999;
          width: 100%;
-         height: 100%;
-         padding-top: 20px;
-         padding-bottom: 20px;
+         height: 100%;         
+         padding: 20px;
          background-color: #ffffff;
          transform: translateX(100%);
          transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1255,11 +1253,7 @@ margin-top: 168px;
 }
 .list {}
 .address-link-item {
-   display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      gap: 24px;
+   padding-bottom: 24px;
       width: 193px;
       height: 72px;
       font-weight: 500;
