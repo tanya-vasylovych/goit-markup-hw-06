@@ -880,6 +880,10 @@ img {
   flex-direction: row;
   gap: 24px;
 }
+.subscribe-label {
+  flex-direction: row;
+  gap: 24px;
+}
 
 .subscribe-input {
   display: flex;
